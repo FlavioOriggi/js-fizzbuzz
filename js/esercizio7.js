@@ -3,25 +3,20 @@
 // per i multipli di 5 stampi "Buzz". 
 // Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz"
 
-var numero = [];
-
-for (var i = 0; i < 101; i++){  
-    if(i % 3 == 0 && i % 5 == 0){
-        document.getElementById('som').innerHTML = (i + 'FizzBuzz' + '<br>');             
-    }  
+for (var i = 1; i <= 100; i++){  
     if(i % 3 == 0){
-        document.getElementById('som').innerHTML = (i + 'fizz' + '<br>');       
-    } 
-
-    if(i % 5 == 0){
-        document.getElementById('som').innerHTML = (i + 'buzz' + '<br>');         
-    } 
-
-    document.getElementById('som').innerHTML = (i + '<br>'); 
-    
-    
-
+    console.log(i + 'Fizz');        
+    } else if(i % 5 == 0){
+    console.log(i + 'Bazz');    
+    } else if(i % 3 == 0 && i % 5 == 0){
+        console.log(i + 'FizzBazz');         
+    } else{
+        console.log(i); 
+    }
 }
+
+
+
 
 
 
