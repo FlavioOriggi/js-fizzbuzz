@@ -3,8 +3,13 @@
 // per i multipli di 5 stampi "Buzz". 
 // Per i numeri che sono sia multipli di 3 che di 5 stampi "FizzBuzz"
 
+// variabile creata per stampare a video
 var list = []
 
+// inizio a controllare dal numero 3, poi il 5 ed infine per entrambi (dato che 
+// il primo numero divisibile per 3 & 5 sarà il 15). Messo alla fine il comando per 
+// la stampa così da stampare i rimanenti numeri non divisibili evitando i doppioni 
+// che si creerebbero mettendolo per primo.
 for (var i = 1; i <= 100; i++){  
     if(i % 3 == 0){
         console.log(i + 'Fizz');    
